@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background: grey;
+}
+.container__header {
+    display: flex;
+    flex-direction: column  ;
+    background: white;
+}
+
+.container__header .header__logo {
+    display: flex;
+    flex-direction: row;
+    margin: 39px 0 65px 31px;
+}
+.container__header .header__logo img {
+    width: 31px;
+    height: 33px;
+    margin: 0 11px 0 0;
+    text-align: center;
+}
+.container__header .header__logo h3 {
+    font-family: 'Poppins';
+    line-height: 39px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 4px 0 0;
+}
+.container__header .header__logo p {
+    font-family: 'Poppins';
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    color: #838383;
+    margin: 0 61px 0 0;
+}
+
+/* Header Menu */
+.side-bar{
+  height: 100vh;
+  top:0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+}
+
+.side-bar.active{
+  left: 0;
+}
+
+.item:first-child{
+  margin: 0 0 17px 0;
+}
+.item {
+  background: white;
+  margin: 17px 0 0 0;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.side-bar .menu{
+  width: 250px;
+  height: 49px;
+  margin: 0 28px 0 28px;
+}
+
+.side-bar .menu .item{
+  position:relative;
+  cursor:pointer;
+}
+
+.side-bar .menu .item a{
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 21px;
+}
+
+.side-bar .menu .item:hover{
+  background: #5932EA;
+  transition: background 0.7s ease;
+}
+.side-bar .menu .item:focus {
+  background: #5932EA;
+}
+
+.side-bar .menu .item i{
+  margin: 19px 19px 19px 19px;
+}
+
+.side-bar .menu .item a .dropdown{
+  position: absolute;
+  right:0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+  background: rgba(255,255,255 , 0.1);
+  display:none;
+}
+
+.side-bar .menu .item .sub-menu a{
+  padding-left: 80px;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+
